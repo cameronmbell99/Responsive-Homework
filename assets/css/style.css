@@ -223,11 +223,34 @@ input[type=submit] {
     border: 0 none;
 }
 
-@media screen and (max-width: 980px) {}
+@media screen and (max-width: 980px) {
+    #main-container {
+        padding: 60px;
+        padding-top: 130px;
+        min-height: calc(100vh - 70px);
+    }
+}
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+    #main-container {
+        padding: 30px;
+        padding-top: 130px;
+        min-height: calc(100vh - 70px);
+    }
+}
 
 @media screen and (max-width: 640px) {
+    #masthead {
+        position: static;
+        z-index: 99;
+        width: 100%;
+        margin: 0 0 30px;
+        overflow: auto;
+        color: #ffffff;
+        background: #ffffff;
+        border-bottom: 2px solid #cccccc;
+        height: auto;
+    }
     #logo {
         float: left;
         width: 100%;
@@ -240,8 +263,19 @@ input[type=submit] {
         text-align: center;
         text-decoration: none;
         background: #4aaaa5;
+        top: 0;
     }
     nav {
-        clear: both;
+        float: left;
+        position: absolute;
+        top: auto;
+        width: 100%;
+        text-align: center;
+        clear: left;
+        margin-top: 100px;
+    }
+    #main-container {
+        padding: 30px;
+        min-height: calc(100vh - 70px);
     }
 }
